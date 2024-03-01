@@ -32,7 +32,7 @@ function Navbar() {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/projects" legacyBehavior passHref>
+              <Link href="#projects" legacyBehavior passHref>
                 <NavigationMenuLink className={hover}>
                   Projects
                 </NavigationMenuLink>

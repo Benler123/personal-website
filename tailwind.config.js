@@ -73,7 +73,7 @@ module.exports = {
       },
     }, 
     fontFamily: {
-      sans: ["Inter+Tight"],
+      sans: ["Inter+Tight", "sans-serif"],
       poppins: ["Poppins", "sans-serif"],
     }
   },
