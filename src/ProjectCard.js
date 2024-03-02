@@ -22,7 +22,7 @@ function ProjectCard(props) {
       style={{ height: "100%", width: "50%", borderRadius: "10px", padding: "20px" }}
     >
       <Grid item md={6}>
-        <div className="flex space-x-4 p-5 justify-center items-center transition-transform duration-200 ease-in-out hover:scale-150">
+        <div className="flex space-x-4 p-5 justify-center items-center transition-transform duration-200 ease-in-out hover:scale-110">
           <img
             src={props.imgSrc}
             alt="project image"

@@ -6,7 +6,7 @@ import { Avatar, AvatarGroup, AvatarIcon } from '@nextui-org/react';
 
 function Hero() {
   return (
-    <div className="h-screen flex justify-center items-center pb-40 border-b">
+    <div className="h-screen flex justify-center items-center pb-40 border-b" id='about'>
       <div className="flex justify-between items-center w-full max-w-4xl px-5">
         <div>
         </div>

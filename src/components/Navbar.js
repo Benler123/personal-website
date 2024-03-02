@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link';
+import { FaDownload } from 'react-icons/fa';
 
 import {
   NavigationMenu,
@@ -25,7 +26,7 @@ function Navbar() {
         <NavigationMenu className="ml-7 justify-start">
           <NavigationMenuList className="flex justify-center space-x-6">
             <NavigationMenuItem>
-              <Link href="/about" legacyBehavior passHref>
+              <Link href="#about" legacyBehavior passHref>
                 <NavigationMenuLink className={hover}>
                   About
                 </NavigationMenuLink>
@@ -39,16 +40,16 @@ function Navbar() {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-            <a href="/TylerKwokResume.pdf" download="TylerKwokResume.pdf" className="hover">
-              Resume
-            </a>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
               <Link href="https://scholar.google.com/citations?hl=en&user=HZwJJdgAAAAJ" legacyBehavior passHref>
                 <NavigationMenuLink className={hover}>
                   Publications 
                 </NavigationMenuLink>
               </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+            <a href="/TylerKwokResume.pdf" download="TylerKwokResume.pdf" className="hover" style={{color:'#00008B', textDecoration: 'underline', display:'flex'}}>
+              Resume <FaDownload style={{ marginLeft: '10px', marginTop:'2px'}} />
+            </a>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
