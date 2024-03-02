@@ -39,11 +39,9 @@ function Navbar() {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/resume" legacyBehavior passHref>
-                <NavigationMenuLink className={hover}>
-                  Resume
-                </NavigationMenuLink>
-              </Link>
+            <a href="/TylerKwokResume.pdf" download="TylerKwokResume.pdf" className="hover">
+              Resume
+            </a>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="https://scholar.google.com/citations?hl=en&user=HZwJJdgAAAAJ" legacyBehavior passHref>
