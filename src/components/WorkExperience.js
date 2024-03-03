@@ -10,7 +10,7 @@ function WorkExperience() {
   const wealthfrontStack = [];
 
   return (
-    <div data-aos="fade-up" data-aos-easing="ease-sine" data-aos-anchor-placement="center-bottom" data-aos-once="true">
+    <div id="workexperience" data-aos="fade-up" data-aos-easing="ease-sine" data-aos-anchor-placement="center-bottom" data-aos-once="true">
     <div className="border-b">
     <div className="mb-5">
     <h1 className="flex justify-center text-3xl mb-5 mt-5">
@@ -39,7 +39,7 @@ function WorkExperience() {
       <WorkExperienceCard
         key="NASA Internship"
         title="Software Engineer Intern"
-        imageSrc="Nasa-Logo-Large.jpg"
+        imageSrc="NasaLogoLarge.jpg"
         startDate="August 2022"
         endDate="May 2022"
         description="Artemis I Space Launch System Control Software"

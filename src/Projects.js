@@ -42,6 +42,12 @@ function Projects() {
     "video": "https://www.youtube.com/watch?v=WC9x3jp_nV8&ab_channel=Google",
     "link": "https://www.popsign.org/"
   }
+
+  const roboRoamSkills = ["Python", "PyGame", "KartoSLAM", "Autonomous Navigation"]
+  const roboRoamDict = {
+    "github": "https://github.gatech.edu/skakkad6/CS-4230-SLAM-Robotics"
+  } 
+
   return (
     <div className="flex justify-center flex-col items-center mt-5">
       <h1 className="flex text-3xl mb-5 scroll-mt-10" id='projects'>PROJECTS.</h1>
@@ -74,6 +80,13 @@ function Projects() {
         imgSrc="popsign.png"
         description="I founded and maintain a tool used to annotate isolated sign language data used for training sign language recognition models used in PopSign AI. The resulting dataset is the largest isolated sign language dataset in existence and PopSign was showcased at Google IO."
         links={popSignDict}
+      />
+      <ProjectCard 
+        name="RoboRoam"
+        skills={roboRoamSkills}
+        imgSrc="roboroam.png"
+        description="RoboRoam is a KartoSLAM toolbox allowing users to run custom SLAM simulations and visualize the results in a 2d environment. The simulation has features such as scan matching, path planning via algorithms such as RRT."
+        links={roboRoamDict}
       />
       </div>
   );

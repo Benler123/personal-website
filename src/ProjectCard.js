@@ -81,7 +81,6 @@ function ProjectCard(props) {
     </Grid>
     </div>
     </div>
-
   );
 }
 

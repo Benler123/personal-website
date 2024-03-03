@@ -40,6 +40,13 @@ function Navbar() {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
+              <Link href="#workexperience" legacyBehavior passHref>
+                <NavigationMenuLink className={hover}>
+                  Work Experience
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
               <Link href="https://scholar.google.com/citations?hl=en&user=HZwJJdgAAAAJ" legacyBehavior passHref>
                 <NavigationMenuLink className={hover}>
                   Publications 
