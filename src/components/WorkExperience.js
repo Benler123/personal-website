@@ -39,7 +39,7 @@ function WorkExperience() {
       <WorkExperienceCard
         key="NASA Internship"
         title="Software Engineer Intern"
-        imageSrc="NasaLogoLarge.jpg"
+        imageSrc="NasaLogoLarge.png"
         startDate="August 2022"
         endDate="May 2022"
         description="Artemis I Space Launch System Control Software"
