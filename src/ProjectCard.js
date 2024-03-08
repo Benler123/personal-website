@@ -8,21 +8,26 @@ import { FaLink, FaVideo } from "react-icons/fa";
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useState } from "react";
+import { useMediaQuery } from 'react-responsive';
 
 function ProjectCard(props) {
     useEffect(() => {
         AOS.init();
         }, []);
-        
+  
+  const isMdScreen = useMediaQuery({ minWidth: 768 })
+  const [isOpen, setIsOpen] = useState(!isMdScreen);
+
   return (
     <div data-aos="fade-up" data-aos-easing="ease-sine" data-aos-anchor-placement="center-bottom" data-aos-once="true">
-        <div className= "flex justify-center items-center">
+        <div className= "flex md:justify-center items-center">
     <Grid
       container
-      style={{ height: "100%", width: "50%", borderRadius: "10px", padding: "20px" }}
+      style={{ height: "100%", width: isMdScreen ? "50%" : "100%", borderRadius: "10px", padding: "20px" }}
     >
       <Grid item md={6}>
-        <div className="flex space-x-4 p-5 justify-center items-center transition-transform duration-200 ease-in-out hover:scale-110">
+        <div className="flex flex-wrap space-x-4 p-5 justify-end items-center transition-transform duration-200 ease-in-out hover:scale-110">
           <img
             src={props.imgSrc}
             alt="project image"
@@ -72,7 +77,7 @@ function ProjectCard(props) {
       </Grid>
 
       <Grid item md={12}>
-        <div className="flex space-x-4 pl-5 justify-center items-center">
+        <div className="flex flex-wrap md:flex-row flex-row full-width-flex space-x-4 pl-5 justify-start md:justify-center items-center">
           {props.skills.map((skill, index) => (
             <SkillsComponent key={index} skill={skill} />
           ))}
