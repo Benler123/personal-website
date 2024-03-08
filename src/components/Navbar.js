@@ -22,11 +22,12 @@ import { SocialIcon } from "react-social-icons";
 
 function Navbar() {
   const isMdScreen = useMediaQuery({ minWidth: 768 })
-  const [isOpen, setIsOpen] = useState(!isMdScreen);
+  const [isOpen, setIsOpen] = useState(false);
+  
   useEffect(() => {
-    setIsOpen(!isMdScreen);
+    setIsOpen(isMdScreen);
   }, [isMdScreen]);
-
+  
   console.log(isMdScreen);  
   console.log(isOpen);
 
