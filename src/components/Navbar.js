@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaDownload, FaBars } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useMediaQuery } from 'react-responsive';
 
 import {
@@ -22,14 +22,19 @@ import { SocialIcon } from "react-social-icons";
 
 function Navbar() {
   const isMdScreen = useMediaQuery({ minWidth: 768 })
-  const [isOpen, setIsOpen] = useState(isMdScreen);
+  const [isOpen, setIsOpen] = useState(!isMdScreen);
+  useEffect(() => {
+    setIsOpen(!isMdScreen);
+  }, [isMdScreen]);
 
+  console.log(isMdScreen);  
+  console.log(isOpen);
 
   const socials = ["instagram", "github", "linkedin"];
   let hover =
     "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground";
   return (
-    <div className="sticky top-0 md:border-b bg-white z-50">
+    <div className="fixed top-0 w-full border-b bg-white z-50">
       <div>
           <button className='text-3xl md:hidden' onClick={() => setIsOpen(!isOpen)}>
             <FaBars />
@@ -85,7 +90,7 @@ function Navbar() {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-        <div className="flex space-x-4 mr-7 mt-2 mb-2">
+        <div className="flex space-x-4 md:mr-7 mt-2 mb-2">
           <SocialIcon
             url="https://www.instagram.com/tyler.kwok/"
             style={{ height: 30, width: 30 }}

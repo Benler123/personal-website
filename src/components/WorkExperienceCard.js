@@ -16,7 +16,7 @@ function WorkExperienceCard(props) {
         <Grid container spacing={2} sx={{ height: "100%" }}>
           <Grid
             item
-            md={12}
+            xs={12}
             sx={{
               display: "flex",
               justifyContent: "center",
@@ -24,7 +24,7 @@ function WorkExperienceCard(props) {
               flexDirection: "column",
             }}
           >
-            <div className="text-lg font-bold font-sans text-blue-900">
+            <div className="text-lg font-bold font-sans text-blue-900 justify-center">
               {props.title}
             </div>
             <div className="text-xs italic">
@@ -33,7 +33,7 @@ function WorkExperienceCard(props) {
           </Grid>
           <Grid
             item
-            md={12}
+            xs={12}
             sx={{
               height: "40%",
             }}
@@ -49,7 +49,7 @@ function WorkExperienceCard(props) {
           </Grid>
           <Grid
             item
-            md={12}
+            xs={12}
             sx={{
               height: "20%",
               display: "flex",

@@ -15,15 +15,15 @@ function Hero() {
       className="h-screen flex justify-center items-center pb-40 border-b"
       id="about"
     >
-      <div className="flex md:flex-row flex-col justify-between items-center w-full max-w-4xl px-5 ">
+      <div className="flex md:flex-row flex-col justify-between items-center h-full w-full max-w-4xl px-5 ">
         {/* <div className="flex justify-between items-center w-full max-w-4xl px-5">
          */}
         <div></div>
-        <div className="flex-0 flex justify-center">
+        <div className="flex-0 flex ">
           <div>
             <TypeAnimation
               sequence={[
-                `Hello, I'm Tyler! I'm a Developer, \n and a Student at Georgia Tech!`,
+                isMdScreen? `Hello, I'm Tyler! I'm a Developer, \n and a Student at Georgia Tech!`: `Hello, I'm Tyler! I'm a Developer, and a Student at Georgia Tech!` ,
               ]}
               speed={50}
               style={{ whiteSpace: "pre-line", fontSize: "2em" }}
@@ -33,7 +33,7 @@ function Hero() {
         <div className="flex-0 flex justify-end">
           <img
             src="/Headshot.png"
-            className="w-52 h-52 rounded-full border-3 border-black "
+            className="w-72 h-72 rounded-full border-3 border-black "
             alt="Avatar"
           />
         </div>
