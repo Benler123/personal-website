@@ -52,7 +52,7 @@ function WorkExperience() {
               imageSrc="gtri_logo.jpeg"
               startDate="May 2022"
               endDate="August 2022"
-              description="Electronic Systems Laboratory MLOps"
+              description="Electronic Systems Laboratory Machine Learning Operations"
               techStack={gtriStack}
             />
       <WorkExperienceCard

@@ -27,9 +27,6 @@ function Navbar() {
   useEffect(() => {
     setIsOpen(isMdScreen);
   }, [isMdScreen]);
-  
-  console.log(isMdScreen);  
-  console.log(isOpen);
 
   const socials = ["instagram", "github", "linkedin"];
   let hover =
