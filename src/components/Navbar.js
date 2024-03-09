@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
 import React from "react";
 import Link from "next/link";
 import { FaDownload, FaBars } from "react-icons/fa";
 import { useState, useEffect } from "react";
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from "react-responsive";
 
 import {
   NavigationMenu,
@@ -21,43 +21,51 @@ import {
 import { SocialIcon } from "react-social-icons";
 
 function Navbar() {
-  const isMdScreen = useMediaQuery({ minWidth: 768 })
+  const isMdScreen = useMediaQuery({ minWidth: 768 });
   const [isOpen, setIsOpen] = useState(false);
-  
+
   useEffect(() => {
     setIsOpen(isMdScreen);
   }, [isMdScreen]);
-  
+
   const socials = ["instagram", "github", "linkedin"];
   let hover =
     "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground";
   return (
     <div className="fixed top-0 w-full border-b bg-white z-50">
       <div>
-          <button className='text-3xl md:hidden' onClick={() => setIsOpen(!isOpen)}>
-            <FaBars />
-          </button>
-        </div>
-      <div className={`md:w-full flex-col md:flex-row items-center justify-between flex ${isOpen ? 'flex' : 'hidden'}`}>
+        <button
+          className="text-3xl md:hidden"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <FaBars />
+        </button>
+      </div>
+      <div
+        className={`md:w-full flex-col md:flex-row items-center justify-between flex ${
+          isOpen ? "flex" : "hidden"
+        }`}
+      >
         <NavigationMenu className="md:ml-7 justify-start">
           <NavigationMenuList className="flex-col md:flex-row md:space-x-6">
             <NavigationMenuItem>
               <Link href="#about" legacyBehavior passHref>
-                <NavigationMenuLink className={hover}>About</NavigationMenuLink>
+                <NavigationMenuLink className={`${hover} `}>
+                  About
+                </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="#projects" legacyBehavior passHref>
-                <NavigationMenuLink className={hover}>
+                <NavigationMenuLink className={`${hover}`}>
                   Projects
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="#workexperience" legacyBehavior passHref>
-                <NavigationMenuLink className={hover}>
-                  Work
-                </NavigationMenuLink>
+              <NavigationMenuLink className={`${hover}`}>
+                  Work</NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
@@ -66,7 +74,7 @@ function Navbar() {
                 legacyBehavior
                 passHref
               >
-                <NavigationMenuLink className={hover}>
+              <NavigationMenuLink className={`${hover}`}>
                   Publications
                 </NavigationMenuLink>
               </Link>
