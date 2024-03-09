@@ -16,15 +16,13 @@ function ProjectCard(props) {
         AOS.init();
         }, []);
   
-  const isMdScreen = useMediaQuery({ minWidth: 768 })
-  const [isOpen, setIsOpen] = useState(!isMdScreen);
 
   return (
     <div data-aos="fade-up" data-aos-easing="ease-sine" data-aos-anchor-placement="center-bottom" data-aos-once="true">
         <div className= "flex md:justify-center items-center">
     <Grid
       container
-      style={{ height: "100%", width: isMdScreen ? "50%" : "100%", borderRadius: "10px", padding: "20px" }}
+      className="h-full w-full md:w-3/5 w-full rounded-lg p-5"
     >
       <Grid item md={6}>
         <div className="flex flex-wrap space-x-4 p-5 justify-end items-center transition-transform duration-200 ease-in-out hover:scale-110">
@@ -35,7 +33,7 @@ function ProjectCard(props) {
           />
         </div>
       </Grid>
-      <Grid item md={6} sx={{ overflowY: "auto" }}>
+      <Grid item xs={12} md={6} sx={{ overflowY: "auto" }}>
         <div className="flex flex-col justify-between h-full">
           <div>
             <div className="text-2xl font-bold  border-gray-900 text-blue-900 border-b">

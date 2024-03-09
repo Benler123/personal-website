@@ -23,7 +23,7 @@ function Hero() {
           <div>
             <TypeAnimation
               sequence={[
-                isMdScreen? `Hello, I'm Tyler! I'm a Developer, \n and a Student at Georgia Tech!`: `Hello, I'm Tyler! I'm a Developer, and a Student at Georgia Tech!` ,
+                isMdScreen? `Hello, I'm Tyler! I'm a Developer, \n and a Student at Georgia Tech!`: `Hello, I'm Tyler! I'm a Developer, and a Student at Georgia Tech!`,
               ]}
               speed={50}
               style={{ whiteSpace: "pre-line", fontSize: "2em" }}

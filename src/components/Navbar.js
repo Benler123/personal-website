@@ -27,7 +27,7 @@ function Navbar() {
   useEffect(() => {
     setIsOpen(isMdScreen);
   }, [isMdScreen]);
-
+  
   const socials = ["instagram", "github", "linkedin"];
   let hover =
     "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground";
@@ -38,7 +38,7 @@ function Navbar() {
             <FaBars />
           </button>
         </div>
-      <div className={`md:w-full flex-col md:flex-row items-center justify-between ${isOpen ? 'flex' : 'hidden'}`}>
+      <div className={`md:w-full flex-col md:flex-row items-center justify-between flex ${isOpen ? 'flex' : 'hidden'}`}>
         <NavigationMenu className="md:ml-7 justify-start">
           <NavigationMenuList className="flex-col md:flex-row md:space-x-6">
             <NavigationMenuItem>
