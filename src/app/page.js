@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 import WorkExperience from "@/components/WorkExperience";
 import Projects from "@/Projects";
 import Footer from "@/Footer";
-import { Avatar, AvatarGroup, AvatarIcon } from '@nextui-org/react';
+import { Analytics } from "@vercel/analytics/react";
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
       <WorkExperience/>
       <Projects/>
       <Footer/>
+      <Analytics/>
     </>
   );
 }
