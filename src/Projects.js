@@ -26,7 +26,10 @@ function Projects() {
     "link": "https://www.marketmatch.tech/",
   }
 
-  const ottoTASkills = ["React", "Next.JS", "Python", "FastAPI", "GCP SQL",  "AWS EC2", "LangChain"]
+  const captioningOnVRSkills = ["Unity 3D", "C#", "MongoDB"];
+
+
+  const ottoTASkills = ["React", "Next.JS", "Python", "FastAPI", "GCP SQL",  "AWS EC2", "LangChain"];
   const ottoTADict = {
     "github": "https://github.com/msteele3/otto-ta",
     "video": "https://devpost.com/software/ottota"

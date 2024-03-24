@@ -33,7 +33,7 @@ function Hero() {
         <div className="flex-0 flex justify-end">
           <img
             src="/Headshot.png"
-            className="w-72 h-72 rounded-full border-3 border-black "
+            className="w-52 h-52 md:w-72 md:h-72 rounded-full border-3 border-black "
             alt="Avatar"
           />
         </div>

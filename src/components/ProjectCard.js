@@ -75,7 +75,7 @@ function ProjectCard(props) {
       </Grid>
 
       <Grid item md={12}>
-        <div className="flex flex-wrap md:flex-row flex-row full-width-flex space-x-4 pl-5 justify-start md:justify-center items-center">
+        <div className="flex flex-wrap md:flex-row flex-row full-width-flex md:space-x-4 md:pl-5 justify-start md:justify-center items-center">
           {props.skills.map((skill, index) => (
             <SkillsComponent key={index} skill={skill} />
           ))}
