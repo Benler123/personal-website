@@ -29,7 +29,7 @@ function ProjectCard(props) {
           <img
             src={props.imgSrc}
             alt="project image"
-            className=" w-96 object-contain rounded-lg"
+            className=" w-96 h-64 object-contain rounded-lg"
           />
         </div>
       </Grid>
