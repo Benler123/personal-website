@@ -109,10 +109,6 @@ function Navbar() {
             url="https://www.linkedin.com/in/TylerKwok/"
             style={{ height: 30, width: 30 }}
           />
-          <SocialIcon
-            url="https://www.twitter.com/in/TylerKwok/"
-            style={{ height: 30, width: 30 }}
-          />
         </div>
       </div>
     </div>
