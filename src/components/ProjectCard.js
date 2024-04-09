@@ -33,23 +33,33 @@ function ProjectCard(props) {
           />
         </div>
       </Grid>
-      <Grid item xs={12} md={6} sx={{ overflowY: "auto" }}>
+      <Grid item xs={12} md={4} sx={{ overflowY: "auto" }}>
         <div className="flex flex-col justify-between h-full">
           <div>
             <div className="text-2xl font-bold  border-gray-900 text-blue-900 border-b">
               {props.name}
             </div>
-            <div className="mt-3 mb-3">{props.description}</div>
+            <div className="mt-3 mb-3 ">{props.description}</div>
           </div>
           <div className="flex justify-beginning pb-4 space-x-6">
             {" "}
             {/* Adjust spacing and alignment as needed */}
             {/* Example icons */}
-            {props.links.github && (
-              <SocialIcon
-                url={props.links.github}
-                style={{ height: 30, width: 30 }}
-              />
+            {Array.isArray(props.links.github) ? (
+              props.links.github.map((link, index) => (
+                <SocialIcon
+                  key={index}
+                  url={link}
+                  style={{ height: 30, width: 30 }}
+                />
+              ))
+            ) : (
+              props.links.github && (
+                <SocialIcon
+                  url={props.links.github}
+                  style={{ height: 30, width: 30 }}
+                />
+              )
             )}
             {props.links.link && (
                 <a
