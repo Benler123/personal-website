@@ -11,7 +11,7 @@ function WorkExperienceCard(props) {
     }, []);
 
   return (
-    <div data-aos="fade-up" data-aos-easing="ease-sine" data-aos-anchor-placement="center-bottom" data-aos-once="true">
+    <div id="workexperience" data-aos="fade-up" data-aos-easing="ease-sine" data-aos-anchor-placement="center-bottom" data-aos-once="true">
       <div className="w-96 h-64 rounded-lg border-gray-600 border-2 m-3 font-sans shadow-lg transition-transform duration-200 ease-in-out hover:scale-105">
         <Grid container spacing={2} sx={{ height: "100%" }}>
           <Grid

@@ -1,5 +1,5 @@
 import React from "react";
-import WorkExperienceCard from "./WorkExperienceCard";
+import WorkExperienceCard from "./components/WorkExperienceCard";
 
 
 function WorkExperience() {

@@ -33,7 +33,7 @@ function ProjectCard(props) {
           />
         </div>
       </Grid>
-      <Grid item xs={12} md={4} sx={{ overflowY: "auto" }}>
+      <Grid item xs={12} md={6} sx={{ overflowY: "auto" }}>
         <div className="flex flex-col justify-between h-full">
           <div>
             <div className="text-2xl font-bold  border-gray-900 text-blue-900 border-b">
