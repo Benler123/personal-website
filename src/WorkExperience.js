@@ -24,7 +24,7 @@ function WorkExperience() {
         imageSrc="Wealthfront_logo.png"
         startDate="May 2024"
         endDate="August 2024"
-        description="TBD"
+        description="Trading Team"
         techStack={wealthfrontStack}
       />
       <WorkExperienceCard
