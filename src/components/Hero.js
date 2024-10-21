@@ -24,8 +24,6 @@ function Hero() {
             <TypeAnimation
               sequence={[
                 "Hello, I am Tyler!",
-                500,
-                "I am a developer and \n Georgia Tech student.",
               ]}
               speed={50}
               style={{ whiteSpace: "pre-line", fontSize: "2em" }}
