@@ -7,7 +7,7 @@ function WorkExperience() {
   const nasaStack = ["/cpp.png", "/java.png", "/rhel.png"];
   const gtriStack = ["/python.png", "/tensorflow.png", "/docker.png"];
   const gtStack =[ "/python.png", "/cpp.png", "/docker.png", "/unity.png", "openGL.png"]
-  const wealthfrontStack = [];
+  const wealthfrontStack = ["/aws.png", "/java.png", "/Spark.png" ];
 
   return (
     <div id="workexperience" data-aos="fade-up" data-aos-easing="ease-sine" data-aos-anchor-placement="center-bottom" data-aos-once="true">
